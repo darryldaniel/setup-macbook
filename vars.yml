@@ -1,0 +1,48 @@
+---
+brew:
+  formulae:
+    - zsh
+    - git
+    - httpie
+    - neovim
+    - yadm
+    - bat
+    - asdf
+    - gpg # for asdf nodejs plugin
+    - gawk # for asdf nodejs plugin
+    - nginx
+    - mysql@8.0
+    - redis
+    - cocoapods
+    - fastlane
+    - terminal-notifier
+    - mas
+    - terraform
+    - starship
+  casks:
+    - alfred
+    - visual-studio-code
+    - notion
+    - numi
+    - skype
+    - slack
+    - react-native-debugger
+    - vagrant
+    - vlc
+    - signal
+    - adobe-acrobat-reader
+    - zoom
+    # These are already on my system so they will fail, uncomment for fresh build
+    # - karabiner-elements
+    # - hey
+    # - microsoft-edge
+    # - google-drive
+    # - boxcryptor
+    # - mimestream
+    # - jetbrains-toolbox
+    # - postman
+    # - royal-tsx
+    # - iterm2
+    # - loom
+    # - timemachineeditor
+    # - appcleaner

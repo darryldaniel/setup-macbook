@@ -1,0 +1,11 @@
+---
+- name: Ensure all brew apps are installed
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ brew.formulae }}"
+- name: Ensure all brew casks are installed
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ brew.casks }}"

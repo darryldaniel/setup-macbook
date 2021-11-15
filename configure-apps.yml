@@ -1,0 +1,27 @@
+---
+- name: Install zulu for zsh management
+  script:
+    cmd: "./install-zulu.sh"
+  register: output
+  changed_when: '"CHANGED::" in output.stdout'
+- name: Add plugins for asdf
+  script:
+    cmd: "./configure-asdf-plugins.sh"
+  register: output
+  changed_when: '"CHANGED::" in output.stdout'
+- name: Update my.cnf to allow emojis in the database
+  copy:
+    src: mysql/my.cnf
+    dest: /etc/my.cnf
+
+# Uncomment this if you want to allow remote connections to mysql
+# - name: Get folder name for MySQL in homebrew
+#   find:
+#     paths: /usr/local/Cellar/mysql/
+#     file_type: directory
+#     patterns: "8.*"
+#   register: file_name
+# - name: Copy plist file to Homebrew cellar path
+#   copy:
+#     src: mysql/homebrew.mxcl.mysql.plist
+#     dest: "{{ file_name.files[0].path }}/homebrew.mxcl.mysql.plist"

@@ -1,0 +1,17 @@
+---
+- name: Setup MacBook for development
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - ./vars.yml
+  tasks:
+  - import_tasks: install-brew-apps.yml
+    tags: ["brew"]
+  - import_tasks: install-mac-store-apps.yml
+    tags: ["mac-store"]
+  - import_tasks: configure-apps.yml
+    tags: ["configure"]
+
+# Todo
+# Configure git
+# Configure nginx
