@@ -1,18 +1,10 @@
 ---
-- name: Install zulu for zsh management
-  script:
-    cmd: "./install-zulu.sh"
-  register: output
-  changed_when: '"CHANGED::" in output.stdout'
-- name: Add plugins for asdf
-  script:
-    cmd: "./configure-asdf-plugins.sh"
-  register: output
-  changed_when: '"CHANGED::" in output.stdout'
 - name: Update my.cnf to allow emojis in the database
   copy:
     src: mysql/my.cnf
     dest: /etc/my.cnf
+- name: Register antibody plugins
+  shell: "antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
 
 # Uncomment this if you want to allow remote connections to mysql
 # - name: Get folder name for MySQL in homebrew

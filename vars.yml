@@ -7,9 +7,6 @@ brew:
     - neovim
     - yadm
     - bat
-    - asdf
-    - gpg # for asdf nodejs plugin
-    - gawk # for asdf nodejs plugin
     - nginx
     - mysql@8.0
     - redis
@@ -19,6 +16,11 @@ brew:
     - mas
     - terraform
     - starship
+    - fnm
+    - chruby
+    - antibody
+    - lazygit
+    - lazydocker
   casks:
     - alfred
     - visual-studio-code
@@ -32,6 +34,9 @@ brew:
     - signal
     - adobe-acrobat-reader
     - zoom
+    - balenaetcher
+    - cyberduck
+    - homebrew/cask-fonts/font-cascadia-code-pl
     # These are already on my system so they will fail, uncomment for fresh build
     # - karabiner-elements
     # - hey
