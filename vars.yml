@@ -2,53 +2,50 @@
 brew:
   formulae:
     - zsh
+    - zsh-completions
     - git
+    - git-delta
     - httpie
     - neovim
     - yadm
     - bat
-    - nginx
-    - mysql@8.0
-    - redis
-    - cocoapods
-    - fastlane
     - terminal-notifier
     - mas
     - terraform
     - starship
     - fnm
     - chruby
-    - antibody
+    - ruby-install
+    - antidote
     - lazygit
-    - lazydocker
+    - lsd
+    - 1password-cli
+    - caddy
   casks:
+    - slack
     - alfred
     - visual-studio-code
     - notion
     - numi
     - skype
-    - slack
-    - react-native-debugger
-    - vagrant
     - vlc
     - signal
     - adobe-acrobat-reader
     - zoom
     - balenaetcher
-    - cyberduck
-    - homebrew/cask-fonts/font-cascadia-code-pl
-    # These are already on my system so they will fail, uncomment for fresh build
-    # - karabiner-elements
-    # - hey
-    # - microsoft-edge
-    # - google-drive
-    # - boxcryptor
-    # - mimestream
-    # - jetbrains-toolbox
-    # - postman
-    # - royal-tsx
-    # - iterm2
-    # - loom
-    # - timemachineeditor
-    # - appcleaner
-    # - viscosity
+    - karabiner-elements
+    - hey
+    - jetbrains-toolbox
+    - postman
+    - royal-tsx
+    - iterm2
+    - loom
+    - timemachineeditor
+    - appcleaner
+    - viscosity
+    - arc
+    - unified-remote
+    - 1password
+    - dbngin
+    - docker
+...

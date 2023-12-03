@@ -1,0 +1,11 @@
+[user]
+    name = Darryl Daniel
+    email = darrylndaniel@gmail.com
+[core]
+    autocrlf = true
+    autocrlf = input
+    pager = delta
+[delta]
+    navigate = true
+    side-by-side = true
+    ; can also set syntax-theme for colors

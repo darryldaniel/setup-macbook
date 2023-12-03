@@ -3,8 +3,10 @@
   copy:
     src: mysql/my.cnf
     dest: /etc/my.cnf
-- name: Register antibody plugins
-  shell: "antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh"
+- name: Configure Git
+  copy:
+    src: git/.gitconfig
+    dest: ~/.gitconfig
 
 # Uncomment this if you want to allow remote connections to mysql
 # - name: Get folder name for MySQL in homebrew
