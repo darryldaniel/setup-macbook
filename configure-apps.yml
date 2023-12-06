@@ -7,6 +7,10 @@
   copy:
     src: git/.gitconfig
     dest: ~/.gitconfig
+- name: Add Time Machine backup script
+  copy:
+    src: timemachine/backup.sh
+    dest: ~/backup.sh
 
 # Uncomment this if you want to allow remote connections to mysql
 # - name: Get folder name for MySQL in homebrew
