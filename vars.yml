@@ -21,6 +21,8 @@ brew:
     - lsd
     - 1password-cli
     - caddy
+    - wezterm
+    - helix
   casks:
     - slack
     - alfred
@@ -48,4 +50,5 @@ brew:
     - 1password
     - dbngin
     - docker
+    - nomad
 ...
